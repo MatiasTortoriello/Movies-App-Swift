@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MoviesPopular" customModule="MoviesProject" customModuleProvider="target">
+            <connections>
+                <outlet property="backButton" destination="bry-oS-HJR" id="Jy0-m8-aTL"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="h2g-ui-h0s">
+                    <rect key="frame" x="10" y="171" width="394" height="678"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="678" id="dUC-wd-05A"/>
+                        <constraint firstAttribute="width" constant="394" id="rBe-Cb-N3H"/>
+                    </constraints>
+                    <color key="separatorColor" systemColor="systemIndigoColor"/>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bry-oS-HJR">
+                    <rect key="frame" x="5" y="54" width="120" height="41"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                    <state key="normal" title="&lt;  Back">
+                        <color key="titleColor" systemColor="opaqueSeparatorColor"/>
+                    </state>
+                    <connections>
+                        <action selector="backButtonPressed" destination="-1" eventType="touchUpInside" id="9l6-ah-lx3"/>
+                    </connections>
+                </button>
+                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="KVp-eW-5ao">
+                    <rect key="frame" x="13" y="105" width="389" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="CvK-RW-cRx"/>
+                    </constraints>
+                    <textInputTraits key="textInputTraits"/>
+                </searchBar>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.034833334389999998" green="0.14345479010000001" blue="0.26403817530000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="h2g-ui-h0s" firstAttribute="top" secondItem="KVp-eW-5ao" secondAttribute="bottom" constant="22" id="9Ve-FV-r1w"/>
+                <constraint firstItem="KVp-eW-5ao" firstAttribute="leading" secondItem="bry-oS-HJR" secondAttribute="leading" constant="8" id="Bro-iv-PFh"/>
+                <constraint firstItem="h2g-ui-h0s" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Cpf-SX-UzI"/>
+                <constraint firstItem="KVp-eW-5ao" firstAttribute="top" secondItem="bry-oS-HJR" secondAttribute="bottom" constant="10" id="GDX-6o-08a"/>
+                <constraint firstAttribute="trailing" secondItem="KVp-eW-5ao" secondAttribute="trailing" constant="12" id="JCg-aQ-aus"/>
+                <constraint firstItem="bry-oS-HJR" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="5" id="Jce-eQ-OlZ"/>
+                <constraint firstItem="h2g-ui-h0s" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" constant="-13" id="XH1-Ea-1Tb"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bry-oS-HJR" secondAttribute="trailing" constant="289" id="e7P-lM-T78"/>
+                <constraint firstItem="bry-oS-HJR" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="pJI-Ji-kXN"/>
+            </constraints>
+            <point key="canvasLocation" x="42.028985507246382" y="131.91964285714286"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class ViewController: UIViewController {
 
@@ -18,14 +19,18 @@ class ViewController: UIViewController {
         
         if(userName!.text == "MatiasTortoriello" && userPassword!.text == "password123456"){
             
-            let destinationViewController = MoviesList()
+            let destinationViewController = MoviesMainMenu()
             
             destinationViewController.modalPresentationStyle = UIModalPresentationStyle.fullScreen
             
             self.present(destinationViewController, animated: true, completion: nil)
+            
             userPassword.text = ""
+            
             alertLabel.text = ""
+            
         } else {
+            
             alertLabel.text = "Incorrect Username or Password. Please try again."
         }
     }

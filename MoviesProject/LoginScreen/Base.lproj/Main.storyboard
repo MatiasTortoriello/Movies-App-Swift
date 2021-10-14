@@ -36,9 +36,11 @@
                                     <action selector="loginButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="pNI-Ab-mXe"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="movieImg" translatesAutoresizingMaskIntoConstraints="NO" id="B8p-uw-qLl">
-                                <rect key="frame" x="87" y="124" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="movieImg" translatesAutoresizingMaskIntoConstraints="NO" id="B8p-uw-qLl">
+                                <rect key="frame" x="-49" y="124" width="512" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="eTp-s1-n7p"/>
+                                </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EZX-JJ-gvW">
                                 <rect key="frame" x="40" y="589" width="334" height="0.0"/>
@@ -52,6 +54,7 @@
                         <constraints>
                             <constraint firstItem="C5Q-TH-JeD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="367" id="04n-nV-9ew"/>
                             <constraint firstItem="EZX-JJ-gvW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="1OJ-x6-Ify"/>
+                            <constraint firstItem="B8p-uw-qLl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3gY-bw-fYU"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="C5Q-TH-JeD" secondAttribute="trailing" constant="20" id="AWS-tE-Eac"/>
                             <constraint firstItem="nbz-wc-9fv" firstAttribute="top" secondItem="uE8-cs-yCI" secondAttribute="bottom" constant="20" id="GCg-wu-l6x"/>
                             <constraint firstItem="uE8-cs-yCI" firstAttribute="leading" secondItem="C5Q-TH-JeD" secondAttribute="leading" id="Gcw-Ax-mvZ"/>
@@ -62,6 +65,7 @@
                             <constraint firstItem="EZX-JJ-gvW" firstAttribute="top" secondItem="nbz-wc-9fv" secondAttribute="bottom" constant="50" id="XGQ-Pa-62E"/>
                             <constraint firstItem="nbz-wc-9fv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="Xsj-Jy-a3K"/>
                             <constraint firstItem="uE8-cs-yCI" firstAttribute="top" secondItem="C5Q-TH-JeD" secondAttribute="bottom" constant="10" id="qVj-43-WoB"/>
+                            <constraint firstItem="B8p-uw-qLl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="xFc-Jj-LO9"/>
                         </constraints>
                     </view>
                     <connections>
